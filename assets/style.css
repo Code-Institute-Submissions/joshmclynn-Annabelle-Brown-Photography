@@ -23,9 +23,17 @@
 .aboutButton{
     float:right;
 }
-.spanImage{
-    max-height: 20%;
+
+#footer{
+    width:100%
 }
-.spanImage>img{
-    object-fit:cover;
+
+#footer-section{
+    float:left;
+    width:33.33%;
+}
+#footer:after{
+    content:"";
+    display:table;
+    clear:both;
 }
