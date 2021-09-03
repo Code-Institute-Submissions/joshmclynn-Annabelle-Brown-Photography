@@ -38,18 +38,20 @@ nav a{
 #gridContainer {
     display: grid; 
     grid-template-columns: 33.3% 33.3% 33.3%; 
+    padding-top: 100px;
    
      
     grid-template-areas: 
       "main-editorial grid-editorial editorial-link"
-      "main-editorial grid-headshot main-headshot"
-      "main-personal grid-personal main-streetstyle"
-      "main-personal grid-streetstyle main-streetstyle";
+      "headshot-link grid-headshot main-headshot"
+      "main-personal grid-personal personal-link"
+      "street-link grid-streetstyle main-streetstyle";
   }
 #main-editorial { grid-area: main-editorial;
                     }
 #grid-editorial { grid-area: grid-editorial; }
-#editorial-link{grid-area:editorial-link}
+#editorial-link{grid-area:editorial-link
+                }
 #grid-headshot { grid-area: grid-headshot; }
 #main-headshot { grid-area: main-headshot; }
 #main-personal { grid-area: main-personal; }
@@ -67,9 +69,12 @@ nav a{
 
 }
 
-#gridContainer>section>H1{
+#gridContainer>section>h2{
     float:middle;
-    padding:40% 40%;
+    text-align: center;
+    padding:60% 45%;
+
+    
 
 }
 
