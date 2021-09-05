@@ -36,34 +36,54 @@ nav a{
 
 
 #gridContainer {
-    display: grid; 
-    grid-template-columns: 33.3% 33.3% 33.3%; 
-    padding-top: 100px;
-   
-     
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
       "main-editorial grid-editorial editorial-link"
       "headshot-link grid-headshot main-headshot"
       "main-personal grid-personal personal-link"
-      "street-link grid-streetstyle main-streetstyle";
+      "street-link grid-streetstyle main-streetstyle"
+      "bio bio pricing"
+      "bio bio image-photo"
+      "contact-form logo instagram-links";
   }
-#main-editorial { grid-area: main-editorial;
-                    }
-#grid-editorial { grid-area: grid-editorial; }
-#editorial-link{grid-area:editorial-link
-                }
-#grid-headshot { grid-area: grid-headshot; }
-#main-headshot { grid-area: main-headshot; }
-#main-personal { grid-area: main-personal; }
-#grid-personal { grid-area: grid-personal; }
-#grid-streetstyle { grid-area: grid-streetstyle;
-                     }
-#main-streetstyle { grid-area: main-streetstyle; }
+  
+  #main-editorial { grid-area: main-editorial; }
+  
+  #grid-editorial { grid-area: grid-editorial; }
+  
+  #grid-headshot { grid-area: grid-headshot; }
+  
+  #main-headshot { grid-area: main-headshot; }
+  
+  #main-personal { grid-area: main-personal; }
+  
+  #grid-personal { grid-area: grid-personal; }
+  
+  #grid-streetstyle { grid-area: grid-streetstyle; }
+  
+  #main-streetstyle { grid-area: main-streetstyle; }
+  
+  #bio { grid-area: bio; }
+  
+  #contact-form { grid-area: contact-form; }
+  
+  #logo { grid-area: logo; }
+  
+  #instagram-links { grid-area: instagram-links; }
+  
+  #pricing { grid-area: pricing; }
+  
+  #image-photo { grid-area: image-photo; }
+  
    /*not sure on the grid idea yet....*/ 
 
   #gridContainer>section>img{
     max-width: 100%;
-    object-fit: cover;
+    object-fit: fill;
   
     max-height:784px;;
 
@@ -78,16 +98,4 @@ nav a{
 
 }
 
-#footer{
-    width:100%
-}
 
-#footer-section{
-    float:left;
-    width:33.33%;
-}
-#footer:after{
-    content:"";
-    display:table;
-    clear:both;
-}
