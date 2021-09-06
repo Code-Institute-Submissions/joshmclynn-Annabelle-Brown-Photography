@@ -1,5 +1,8 @@
 
 
+    
+
+
 #head{
     
     
@@ -141,8 +144,109 @@ zoom:170%}
  
     padding:60% 45%;
 }
-@media screen {min
+
+@media (max-width:550px){
     
+
+    #gridContainer{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+    "main-editorial grid-editorial"
+    "editorial-link editorial-link"
+    "grid-headshot main-headshot"
+    "headshot-link headshot-link"
+    "main-personal grid-personal"
+    "personal-link personal-link"
+    "grid-streetstyle main-streetstyle"
+    "street-link street-link"
+    "bio bio"
+    
+    "contact-form instagram-links"
+    "logo logo";
+      
+
+
+        
+
+
+
+
+    }
+    #main-editorial { grid-area: main-editorial; }
+  
+    #grid-editorial { grid-area: grid-editorial; }
+    #editorial-link{
+      grid-area:editorial-link;
+      
+  
+    }
+    #gridContainer>section>img{
+        object-fit: cover;
+    }
+    
+    #grid-headshot { grid-area: grid-headshot; }
+    
+    #main-headshot { grid-area: main-headshot; }
+    #headshot-link{
+        
+      grid-area:headshot-link;
+      
+      
+    }
+    
+    #main-personal { grid-area: main-personal; }
+    
+    #grid-personal { grid-area: grid-personal; }
+    #personal-link{
+      grid-area:personal-link;
+     
+    }
+    
+    #grid-streetstyle { grid-area: grid-streetstyle; }
+    
+    #main-streetstyle { grid-area: main-streetstyle; }
+    #street-link{
+      grid-area:street-link;
+      
+        
+    }
+    
+    #bio { 
+      grid-area: bio; 
+      padding-top:15%;
+      padding-bottom: 15%;
+  
+      
+    }
+    h1{
+        font-size:200%;
+    }
+    
+    
+    #contact-form { 
+      grid-area: contact-form;
+      }
+    
+    #logo { 
+      grid-area: logo;
+       }
+    
+    #instagram-links { 
+      grid-area: instagram-links;
+       }
+    
+    
+    
+    #image-photo { grid-area: image-photo;
+  object-fit: fill; 
+  zoom:170%}
+  #gridContainer>section>img{
+    object-fit: cover;
 }
+
+}
+    
+
 
 
