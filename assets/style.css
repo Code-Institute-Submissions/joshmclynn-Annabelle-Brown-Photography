@@ -30,6 +30,15 @@ nav a{
     padding:20px;
 }
 
+#logo-head{
+    float:left;
+    
+}
+#logo-head>img{
+    height:15rem;
+    width: 60rem;
+    object-fit: cover;
+}
 
 
 
@@ -41,7 +50,7 @@ nav a{
 
 
 #gridContainer {
-    margin-top:10%;
+    padding-top: 25%;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     
@@ -52,8 +61,8 @@ nav a{
       "third-headshot grid-headshot main-headshot"
       "main-personal grid-personal third-personal"
       "third-streetstyle grid-streetstyle main-streetstyle"
-      "bio bio bio"
-      "contact-form logo instagram-links";
+      "bio bio contact-form"
+      "logo instagram-links instagram-links";
   }
   #text{
     text-align: center;
@@ -102,8 +111,8 @@ nav a{
   
   #bio { 
     grid-area: bio; 
-    padding-top:15%;
-    padding-bottom: 15%;
+    padding:15%;
+   
 
     
   }
@@ -167,6 +176,11 @@ zoom:170%}
 }
 #grid-editorial:hover{
     opacity: 1;
+}
+#map{
+    width:400px;
+    height:300px;
+    
 }
 
 @media (max-width:550px){
