@@ -11,34 +11,36 @@
     position: fixed;
     width:100%;
     background-color:white;
-    border-bottom: 10px;
+    
     border-color: black;
-    font-size: 25px;
+    font-size: inherit;
+    
     
     
     
     
 }
+
 
 #nav{
     float:right;
     top:0;
     padding-right: 2.5%;
+    text-decoration-color: black;
+    
     
 }
 nav a{
-    padding:20px;
-}
-
-#logo-head{
-    float:left;
+    padding: 20px;
+    text-decoration: none;
     
 }
-#logo-head>img{
-    height:15rem;
-    width: 60rem;
-    object-fit: cover;
+nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
 }
+
+
 
 
 
@@ -50,7 +52,8 @@ nav a{
 
 
 #gridContainer {
-    padding-top: 25%;
+    padding-top: 12rem;
+    
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     
@@ -111,18 +114,21 @@ nav a{
   
   #bio { 
     grid-area: bio; 
-    padding:15%;
+    padding-top:4rem;
+    padding-right:7rem;
+   
    
 
     
   }
   h1{
-      font-size:200%;
+      font-size:2rem;
   }
   
   
   #contact-form { 
     grid-area: contact-form;
+    padding-top:4rem;
     }
   
   #logo { 
@@ -188,29 +194,67 @@ zoom:170%}
 
     #gridContainer{
         display:grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         
         grid-template-areas:
-    "main-editorial grid-editorial"
-    "editorial-link editorial-link"
-    "grid-headshot main-headshot"
-    "headshot-link headshot-link"
-    "main-personal grid-personal"
-    "personal-link personal-link"
-    "grid-streetstyle main-streetstyle"
-    "street-link street-link"
-    "bio bio"
-    
-    "contact-form contact-form "
-    "logo instagram-links";
+    "grid-editorial"
+    "grid-headshot"
+    "grid-personal"
+    "grid-streetstyle"
+    "bio"
+    "contact-form"
+    "logo"
+    "instagram-links"
+    ;
       
 
 
+       
+
+
+
+
+    }
+    #head{
+    
+    
+        overflow: hidden;
+        top:0;
+        position: fixed;
+        width:100%;
+        background-color:white;
         
-
-
-
-
+        border-color: black;
+        font-size: inherit;
+        
+        
+        
+        
+        
+    }
+    
+    
+    #nav{
+        
+        top:0;
+        padding-right: 2.5%;
+        text-decoration-color: black;
+        width:100%;
+        text-align: center;
+        
+        
+    }
+    nav a{
+        
+        text-decoration: none;
+        
+    }
+    nav a:hover{
+        text-decoration: underline;
+        text-decoration-color: grey;
+    }
+    h2{
+        text-align: center;
     }
     #main-editorial { grid-area: main-editorial; }
   
@@ -255,17 +299,22 @@ zoom:170%}
       grid-area: bio; 
       padding-top:15%;
       padding-bottom: 15%;
+      width:100%;
   
       
     }
-    h1{
-        font-size:200%;
-    }
+   
     
     
     #contact-form { 
       grid-area: contact-form;
       }
+    #textarea{
+        width:100%;
+    }
+    #map{
+        width:100%;
+    }
     
     #logo { 
       grid-area: logo;
@@ -277,9 +326,7 @@ zoom:170%}
     
     
     
-    #image-photo { grid-area: image-photo;
-  object-fit: fill; 
-  zoom:170%}
+    
   #gridContainer>section>img{
     object-fit: cover;
 }
