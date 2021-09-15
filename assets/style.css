@@ -91,6 +91,7 @@ nav a:hover{
 #gridContainer>section>img{
     object-fit: cover;
     height:auto;
+    width:100%;
     display:block;
 }
   
@@ -171,11 +172,16 @@ nav a:hover{
   }
   #contact-form>#form>#label{
     color: white;
+    text-align: center;
+    
   }
-  #input{
+  #contact-form>#form>#input{
     width:68%;
 
-  }  
+  } 
+  #textarea{
+    width:68%;
+  } 
   
   #logo { 
     grid-area: logo;
@@ -195,6 +201,7 @@ nav a:hover{
      
     margin-left:25%;
     margin-right:25%;
+    
     
     
      }
