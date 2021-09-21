@@ -76,7 +76,6 @@ nav a:hover{
 
 #gridContainer {
     padding-top: 12rem;
-    max-width: 1200px;
     
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -206,7 +205,7 @@ nav a:hover{
      }
   
   #instagram-links { 
-    grid-area: instagram-links;
+   
     padding-top:2rem;
      
     margin-left:25%;
@@ -258,146 +257,93 @@ nav a:hover{
         grid-template-columns: 100%;
         width:35rem;
         grid-template-areas:
-    "grid-editorial"
-    "grid-headshot"
-    "grid-personal"
+    "third-streetstyle"
     "grid-streetstyle"
+    "third-headshot"
+    "grid-headshot"
+    "third-personal"
+    "grid-personal"
+    "main-editorial"
+    "grid-editorial"
+    
     ;
-    
-      
-
-    }
-       
-    #contact-form{
-      margin-left:6rem;
-    }
-    #contact-form>#form>#input{
-      width:25rem;
-    }
-
-
-
-    
-    .scrollImage{
-      width:36rem;
-    }
-    #head{
-    
-    
-        overflow: hidden;
-        top:0;
-        position: fixed;
-        width:36rem;
-        background-color:white;
-        
-        border-color: black;
-        font-size: inherit;
-        
-        
-        
-        
-        
     }
     
-    
-    #nav{
-        
-        top:0;
-        padding-right: 2.5%;
-        text-decoration-color: black;
-        width:100%;
-        text-align: center;
-        
-        
-    }
-    nav a{
-        
-        text-decoration: none;
-        
-    }
-    nav a:hover{
-        text-decoration: underline;
-        text-decoration-color: grey;
-    }
-    h2{
-        text-align: center;
-    }
-    #main-editorial { grid-area: main-editorial; }
+  #grid-headshot { grid-area: grid-headshot; }
   
-    #grid-editorial { grid-area: grid-editorial; }
-    #editorial-link{
-      grid-area:editorial-link;
+  #main-headshot { grid-area: main-headshot; }
+  #third-headshot{
       
+    grid-area:third-headshot;
+    
+    
+  }
   
-    }
-    #gridContainer>section>img{
-        object-fit: cover;
-        width:100%;
-    }
-    
-    #grid-headshot { grid-area: grid-headshot; }
-    
-    #main-headshot { grid-area: main-headshot; }
-    #headshot-link{
-        
-      grid-area:headshot-link;
-      
-      
-    }
-    
-    #main-personal { grid-area: main-personal; }
-    
-    #grid-personal { grid-area: grid-personal; }
-    #personal-link{
-      grid-area:personal-link;
-     
-    }
-    
-    #grid-streetstyle { grid-area: grid-streetstyle; }
-    
-    #main-streetstyle { grid-area: main-streetstyle; }
-    #street-link{
-      grid-area:street-link;
-      
-        
-    }
-    
-    #bio { 
-      
-      
-      width:auto;
+  #main-personal { grid-area: main-personal; }
   
-      
-    }
+  #grid-personal { grid-area: grid-personal; }
+  #third-personal{
+    grid-area:third-personal;
    
+  }
+  
+  #grid-streetstyle { grid-area: grid-streetstyle; }
+  
+  #main-streetstyle { grid-area: main-streetstyle; }
+  #third-streetstyle{
+    grid-area:third-streetstyle;
     
-    
-    #contact-form { 
-      grid-area: contact-form;
-      }
-    #textarea{
-        width:100%;
-    }
-    #map{
-        width:100%;
-        display: flex;
-    }
-    
-    #logo { 
-      grid-area: logo;
-       }
-    
-    #instagram-links { 
-      width:37rem;
       
-       }
+  } 
+  #main-editorial{
+    grid-area:main-editorial;
+  } 
+  #grid-editorial{
+    grid-area:grid-editorial;
+  }
+  #editorial-third{
+    grid-area:editorial-third;
+  }
+
+  
+  #head{
+    overflow: hidden;
+    top:0;
+    position: fixed;
+    width:100%;
+    background-color:white;
     
-    
-    
-    
-  #gridContainer>section>img{
-    object-fit: cover;
-}
+    border-color: black;
+    font-size: inherit;
+    opacity: 0.85;
+    font-weight:bold;
+    z-index: 2;
+  }
+  #head>#title{
+    padding-left:2rem;
+  }
+       
+  .scrollImage{
+    width:34rem;
+  }  
+  #contact-form{
+    margin-left:4rem;
+  }
+  #contact-form>#form>#input{
+    width:25rem;
+  }
+  #contact-form>#form>#textarea{
+    width:25rem;
+  }
+  #instagram-links{
+    margin-left:6rem;
+   
+    padding-bottom:2rem;
+
+  }
+  #instagram-links>a{
+    padding:2.1rem;
+  }
 
 
     
