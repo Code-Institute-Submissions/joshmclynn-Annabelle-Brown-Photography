@@ -154,7 +154,7 @@ nav a:hover{
 #third-personal { grid-area: thirdPers; }
 #main-editorial { grid-area: mainEdit; }
 #grid-editorial { grid-area: gridEdit; }
-#third-editorial { grid-area: thirdEdit; }
+#editorial-third { grid-area: thirdEdit; }
 #third-headshot { grid-area: thirdHead; }
 #grid-headshot { grid-area: gridHead; }
 #main-headshot { grid-area: mainHead; }
