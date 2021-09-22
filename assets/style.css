@@ -58,11 +58,13 @@ nav a:hover{
 .scrollImage{
   background-image:url('./images/London.jpg');
   height:100%;
+  position: relative;
   
   background-attachment: fixed;
   background-position: center;
   background-repeat:no-repeat;
   width:100%;
+  z-index: 0;
 
  
 }
@@ -78,12 +80,16 @@ nav a:hover{
   margin-top: 13rem;
   display: grid; 
   grid-template-columns: 33.3% 33.3fr 33.3fr; 
-   
+  
   gap: 20px 20px; 
   grid-template-areas: 
+    "streetInfo streetInfo streetInfo"
     "thirdStreet gridStreet mainStreet"
+    "persInfo persInfo persInfo"
     "mainPers gridPers thirdPers"
+    "editInfo editInfo editInfo"
     "mainEdit gridEdit thirdEdit"
+    "headInfo headInfo headInfo"
     "thirdHead gridHead mainHead"
     "bio bio bio"
     "contactForm logo socialLinks"; 
@@ -96,13 +102,52 @@ nav a:hover{
     height:100%;
     width:100%;
     display:block;
+    position: relative;
+}
+    .editInfo{
+      grid-area:editInfo;
+      color:white;
+      text-align: center;
+      font-size:2rem;
+      text-transform: capitalize;
+      letter-spacing: 1rem;
+  
+    } 
+    .headInfo{
+      grid-area:headInfo;
+      color:white;
+      text-align: center;
+      font-size:2rem;
+      text-transform: capitalize;
+      letter-spacing: 1rem;
+      
+  
+    }
+    .persInfo{
+      grid-area:persInfo;
+      color:white;
+      text-align: center;
+      font-size:2rem;
+      text-transform: capitalize;
+      letter-spacing: 1rem;
+      
+    }
+    .streetInfo{
+      grid-area:streetInfo;
+      color:white;
+      text-align: center;
+      font-size:2rem;
+      text-transform: capitalize;
+      letter-spacing: 1rem;
+    }
 }
   
  
  
   
 #third-streetstyle { grid-area: thirdStreet; }
-#grid-streetstyle { grid-area: gridStreet; }
+#grid-streetstyle { grid-area: gridStreet;
+ }
 #main-streetstyle { grid-area: mainStreet; }
 #main-personal { grid-area: mainPers; }
 #grid-personal { grid-area: gridPers; }
@@ -126,7 +171,9 @@ nav a:hover{
     opacity:.9;
     z-index:1;
     font-weight: 400; }
-#contact-form { grid-area: contactForm; }
+#contact-form { grid-area: contactForm;
+}
+
 #logo { grid-area: logo; }
 #instagram-links { grid-area: socialLinks;
 height:auto; }
@@ -135,7 +182,9 @@ height:auto; }
 
  
     
-
+  
+  
+  
   
 
    
@@ -224,21 +273,64 @@ height:auto; }
    
     #gridContainer{
         display:grid;
-        grid-template-columns: 100%;
-        width:35rem;
+        grid-template-columns: 50% 50%;
+        
         grid-template-areas:
-    "third-streetstyle"
-    "grid-streetstyle"
-    "third-headshot"
-    "grid-headshot"
-    "third-personal"
-    "grid-personal"
-    "main-editorial"
-    "grid-editorial"
+    "streetInfo streetInfo"
+    "third-streetstyle main-streetstyle"
+    "grid-streetstyle grid-streetstyle"
+    "headInfo headInfo"
+    "third-headshot main-headshot"
+    "grid-headshot grid-headshot"
+    "persInfo persInfo"
+    "third-personal main-personal"
+    "grid-personal grid-personal"
+    "editInfo editInfo"
+    "main-editorial editorial-third"
+    "grid-editorial grid-editorial"
+    "bio bio"
+    "contactForm contactForm"
+    "socialLinks socialLinks"
+
     
     ;
     }
+  .editInfo{
+    grid-area:editInfo;
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+
+  } 
+  .headInfo{
+    grid-area:headInfo;
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
     
+
+  }
+  .persInfo{
+    grid-area:persInfo;
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+    
+  }
+  .streetInfo{
+    grid-area:streetInfo;
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+  }
   #grid-headshot { grid-area: grid-headshot; }
   
   #main-headshot { grid-area: main-headshot; }
@@ -280,7 +372,7 @@ height:auto; }
     overflow: hidden;
     top:0;
     position: fixed;
-    width:100%;
+    width:37rem;
     background-color:white;
     
     border-color: black;
@@ -294,10 +386,10 @@ height:auto; }
   }
        
   .scrollImage{
-    width:34rem;
+    width:36rem;
   }  
   #contact-form{
-    margin-left:4rem;
+    margin-left:5rem;
   }
   #contact-form>#form>#input{
     width:25rem;
@@ -307,6 +399,7 @@ height:auto; }
   }
   #instagram-links{
     margin-left:6rem;
+    margin-top:2rem;
    
     padding-bottom:2rem;
 
