@@ -8,6 +8,7 @@ html{
 body{
 height:auto;
 }
+/*header and nav*/
 #head{
   
   
@@ -53,7 +54,7 @@ nav a:hover{
 }
 
 
-
+/*parallax image*/
 .scrollImage{
 background-image:url('./images/London.jpg');
 height:100%;
@@ -73,7 +74,7 @@ z-index: 0;
 
 
 
-
+/*css for grid*/
 #gridContainer {
   margin-top: 13rem;
   display: grid; 
@@ -245,7 +246,7 @@ height:auto; }
  
 
   
-   /*not sure on the grid idea yet....*/ 
+  
 
   #gridContainer>section>img{
     max-width: 100%;
@@ -265,8 +266,8 @@ height:auto; }
     height:300px;
     
 }
-
-@media screen and (max-width:550px){
+/*mobile view*/
+@media screen and (max-device-width:550px){
    body{
      width:fit-content;
    } 
