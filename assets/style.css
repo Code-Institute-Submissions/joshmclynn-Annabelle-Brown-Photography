@@ -419,6 +419,9 @@ height:auto; }
 #contact-form>#map{
   width:20rem;
 }
+#contact-form>#map>#map{
+  width:20rem;
+}
 
 
   
