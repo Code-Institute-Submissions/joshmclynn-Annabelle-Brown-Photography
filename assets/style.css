@@ -275,7 +275,7 @@ height:auto; }
   #gridContainer{
       display:grid;
       grid-template-columns: 50% 50%;
-      grid-gap: 1rem;
+      gap: none;
       grid-template-areas:
   "streetInfo streetInfo"
   "third-streetstyle main-streetstyle"
