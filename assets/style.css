@@ -276,6 +276,8 @@ height:auto; }
       display:grid;
       grid-template-columns: 50% 50%;
       gap: 0px;
+      width:23rem;
+      margin-top:13rem;
       grid-template-areas:
   "streetInfo streetInfo"
   "third-streetstyle main-streetstyle"
@@ -300,7 +302,7 @@ height:auto; }
   grid-area:editInfo;
   color:white;
   text-align: center;
-  font-size:2rem;
+  font-size:1rem;
   text-transform: capitalize;
   letter-spacing: 1rem;
 
@@ -309,7 +311,7 @@ height:auto; }
   grid-area:headInfo;
   color:white;
   text-align: center;
-  font-size:2rem;
+  font-size:1rem;
   text-transform: capitalize;
   letter-spacing: 1rem;
   
@@ -319,7 +321,7 @@ height:auto; }
   grid-area:persInfo;
   color:white;
   text-align: center;
-  font-size:2rem;
+  font-size:1rem;
   text-transform: capitalize;
   letter-spacing: 1rem;
   
@@ -328,7 +330,7 @@ height:auto; }
   grid-area:streetInfo;
   color:white;
   text-align: center;
-  font-size:2rem;
+  font-size:1rem;
   text-transform: capitalize;
   letter-spacing: 1rem;
 }
@@ -373,7 +375,7 @@ height:auto; }
   overflow: hidden;
   top:0;
   position: fixed;
-  width:31rem;
+  width:100%;
   background-color:white;
   
   border-color: black;
@@ -382,21 +384,27 @@ height:auto; }
   font-weight:bold;
   z-index: 2;
 }
-#head>nav{
-  padding-right:5rem;
+#head>#h1{
+  font-size:1.4rem;
 }
-     
+#head>#nav{
+  margin-right:1.4rem;
+}
+#head>#nav>a{
+  padding:10px;
+  font-size:1rem;
+}    
 .scrollImage{
-  width:28rem;
+  width:23rem;
 }  
 #contact-form{
   margin-left:2rem;
 }
 #contact-form>#form>#input{
-  width:25rem;
+  width:20rem;
 }
 #contact-form>#form>#textarea{
-  width:25rem;
+  width:20rem;
 }
 #instagram-links{
   margin-left:2rem;
@@ -407,6 +415,9 @@ height:auto; }
 }
 #instagram-links>a{
   padding:2.1rem;
+}
+#contact-form>#map{
+  width:20rem;
 }
 
 
