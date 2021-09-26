@@ -268,9 +268,7 @@ height:auto; }
 }
 /*mobile view*/
 @media screen and (max-width:390px){
-   body{
-     width:fit-content;
-   } 
+   
   
   #gridContainer{
       display:grid;
@@ -398,7 +396,7 @@ height:auto; }
   width:23rem;
 }  
 #contact-form{
-  margin-left:2rem;
+  margin-left:1rem;
 }
 #contact-form>#form>#input{
   width:20rem;
@@ -407,14 +405,14 @@ height:auto; }
   width:20rem;
 }
 #instagram-links{
-  margin-left:2rem;
+  margin-left:1rem;
   margin-top:2rem;
  
   padding-bottom:2rem;
 
 }
 #instagram-links>a{
-  padding:2.1rem;
+  padding:1.5rem;
 }
 #contact-form>#map{
   width:20rem;
@@ -423,7 +421,14 @@ height:auto; }
   width:20rem;
 }
 
-
+#bio{
+  margin-left:1rem;
+  margin-right:1rem;
+  padding:1rem 1rem;
+}
+#bio>#about{
+  letter-spacing: 1rem;
+}
   
 
 
