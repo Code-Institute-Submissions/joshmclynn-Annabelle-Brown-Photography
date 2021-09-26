@@ -74,7 +74,13 @@ z-index: 0;
 
 }
 
-
+@media screen and (min-width:1500px) {
+  .scrollImage{
+    width:100%;
+    background-repeat:repeat;
+  }
+  
+}
 
 
 
