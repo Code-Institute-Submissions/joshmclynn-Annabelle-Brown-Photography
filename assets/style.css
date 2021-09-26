@@ -274,8 +274,20 @@ height:auto; }
     height:300px;
     
 }
+/*tablet view*/
+@media screen and (min-width:700px) and (max-width:800px){
+  
+  #gridContainer>#contact-form{
+      margin-left:9rem;
+  }
+
+  #instagram-links{
+    margin-left:14rem;
+  }
+  
+}
 /*mobile view*/
-@media screen and (max-width:390px){
+@media screen and (max-width:400px){
    
   
   #gridContainer{
@@ -442,4 +454,6 @@ height:auto; }
 
 
 }    
+
+
 
