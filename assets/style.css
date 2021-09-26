@@ -4,11 +4,14 @@ html{
   font-family:Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   height:100%;
+  scroll-padding-top: 195px;
 }
 body{
 height:auto;
 }
+
 /*header and nav*/
+
 #head{
   
   
@@ -54,6 +57,8 @@ nav a:hover{
 }
 
 
+
+
 /*parallax image*/
 .scrollImage{
 background-image:url('./images/London.jpg');
@@ -91,7 +96,8 @@ z-index: 0;
     "headInfo headInfo headInfo"
     "thirdHead gridHead mainHead"
     "bio bio bio"
-    "contactForm logo socialLinks"; 
+    "contactForm contactForm contactForm"
+    "socialLinks socialLinks socialLinks"; 
 }
   #text{
     text-align: center;
@@ -197,7 +203,7 @@ height:auto; }
   
   #contact-form { 
     margin-top:20rem;
-    margin-left:5rem;
+    margin-left:17rem;
     margin-bottom:5rem;
    
     
@@ -206,6 +212,7 @@ height:auto; }
   
   #contact-form>h2{
     color:white;
+    
     
   }
   #contact-form>#form>#label{
@@ -224,8 +231,9 @@ height:auto; }
  
   
   #instagram-links { 
-    margin-top:33rem;
-    padding-top:2rem;
+    margin-top:10rem;
+    margin-left:23rem;
+
      
     
     
@@ -386,7 +394,7 @@ height:auto; }
   font-size:1.4rem;
 }
 #head>#nav{
-  margin-right:1.4rem;
+  margin-right:3rem;
 }
 #head>#nav>a{
   padding:10px;
