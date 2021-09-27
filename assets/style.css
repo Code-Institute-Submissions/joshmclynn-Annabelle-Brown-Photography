@@ -226,10 +226,13 @@ height:auto; }
     
     
   }
-  #contact-form>#form>#input{
+   
+  #contact-form>#form>#nameInput{
     width:25rem;
-
-  } 
+  }
+  #contact-form>#form>#emailInput{
+    width:25rem;
+  }
   #textarea{
     width:25rem;
   } 
@@ -424,7 +427,10 @@ height:auto; }
 #contact-form{
   margin-left:1rem;
 }
-#contact-form>#form>#input{
+#contact-form>#form>#nameInput{
+  width:20rem;
+}
+#contact-form>#form>#emailInput{
   width:20rem;
 }
 #contact-form>#form>#textarea{
@@ -443,7 +449,7 @@ height:auto; }
 #contact-form>.map{
   width:20rem;
 }
-#contact-form>.map>.map{
+.map>#map{
   width:20rem;
 }
 
