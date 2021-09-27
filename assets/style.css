@@ -74,13 +74,7 @@ z-index: 0;
 
 }
 
-@media screen and (min-width:1500px) {
-  .scrollImage{
-    width:100%;
-    background-repeat:repeat;
-  }
-  
-}
+
 
 
 
@@ -221,7 +215,7 @@ height:auto; }
     
     
   }
-  #contact-form>#form>#label{
+  #contact-form>#form{
     color: white;
     
     
@@ -240,8 +234,8 @@ height:auto; }
  
   
   .instagram-links { 
-    margin-top:10rem;
-    margin-left:23rem;
+    margin-top:2rem;
+    margin-left:22rem;
 
      
     
@@ -283,6 +277,20 @@ height:auto; }
     height:300px;
     
 }
+@media screen and (min-width:1300px)and (max-width:1500px) {
+  .scrollImage{
+    width:100%;
+    background-repeat:repeat;
+  }
+  #contact-form{
+    margin-left:30rem;
+  }
+  .instagram-links{
+    margin-left:35rem;
+  }
+
+  
+}
 /*tablet view*/
 @media screen and (min-width:700px) and (max-width:800px){
   
@@ -296,7 +304,7 @@ height:auto; }
   
 }
 /*mobile view*/
-@media screen and (max-width:400px){
+@media screen and (max-width:390px){
    
   
   .gridContainer{
