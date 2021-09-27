@@ -86,7 +86,7 @@ z-index: 0;
 
 
 /*css for grid*/
-#gridContainer {
+.gridContainer {
   margin-top: 13rem;
   display: grid; 
   grid-template-columns: 33.3% 33.3fr 33.3fr; 
@@ -108,14 +108,14 @@ z-index: 0;
   #text{
     text-align: center;
   } 
-#gridContainer>section>img{
+.gridContainer>div>img{
     object-fit: cover;
     height:100%;
     width:100%;
     display:block;
     position: relative;
 }
-    .editInfo{
+    #editInfo{
       grid-area:editInfo;
       color:white;
       text-align: center;
@@ -124,7 +124,7 @@ z-index: 0;
       letter-spacing: 1rem;
   
     } 
-    .headInfo{
+    #headInfo{
       grid-area:headInfo;
       color:white;
       text-align: center;
@@ -134,7 +134,7 @@ z-index: 0;
       
   
     }
-    .persInfo{
+    #persInfo{
       grid-area:persInfo;
       color:white;
       text-align: center;
@@ -143,7 +143,7 @@ z-index: 0;
       letter-spacing: 1rem;
       
     }
-    .streetInfo{
+    #streetInfo{
       grid-area:streetInfo;
       color:white;
       text-align: center;
@@ -156,19 +156,19 @@ z-index: 0;
  
  
   
-#third-streetstyle { grid-area: thirdStreet; }
-#grid-streetstyle { grid-area: gridStreet;
+.third-streetstyle { grid-area: thirdStreet; }
+.grid-streetstyle { grid-area: gridStreet;
  }
-#main-streetstyle { grid-area: mainStreet; }
-#main-personal { grid-area: mainPers; }
-#grid-personal { grid-area: gridPers; }
-#third-personal { grid-area: thirdPers; }
-#main-editorial { grid-area: mainEdit; }
-#grid-editorial { grid-area: gridEdit; }
-#editorial-third { grid-area: thirdEdit; }
-#third-headshot { grid-area: thirdHead; }
-#grid-headshot { grid-area: gridHead; }
-#main-headshot { grid-area: mainHead; }
+.main-streetstyle { grid-area: mainStreet; }
+.main-personal { grid-area: mainPers; }
+.grid-personal { grid-area: gridPers; }
+.third-personal { grid-area: thirdPers; }
+.main-editorial { grid-area: mainEdit; }
+.grid-editorial { grid-area: gridEdit; }
+.editorial-third { grid-area: thirdEdit; }
+.third-headshot { grid-area: thirdHead; }
+.grid-headshot { grid-area: gridHead; }
+.main-headshot { grid-area: mainHead; }
 #bio { grid-area: bio;
       color: black;
     background-color: white;
@@ -185,8 +185,8 @@ z-index: 0;
 #contact-form { grid-area: contactForm;
 }
 
-#logo { grid-area: logo; }
-#instagram-links { grid-area: socialLinks;
+
+.instagram-links { grid-area: socialLinks;
 height:auto; }
 
 
@@ -236,7 +236,7 @@ height:auto; }
   
  
   
-  #instagram-links { 
+  .instagram-links { 
     margin-top:10rem;
     margin-left:23rem;
 
@@ -246,7 +246,7 @@ height:auto; }
     
     
      }
-  #instagram-links>a{
+  .instagram-links>a{
     height:2rem;
     padding:.7rem;
     -webkit-filter: invert(1);
@@ -262,7 +262,7 @@ height:auto; }
   
   
 
-  #gridContainer>section>img{
+  .gridContainer>section>img{
     max-width: 100%;
     object-fit: cover;
   
@@ -275,19 +275,19 @@ height:auto; }
 
 
 
-#map{
-    width:400px;
+.map>#map{
+    width:25rem;
     height:300px;
     
 }
 /*tablet view*/
 @media screen and (min-width:700px) and (max-width:800px){
   
-  #gridContainer>#contact-form{
+  .gridContainer>#contact-form{
       margin-left:9rem;
   }
 
-  #instagram-links{
+  .instagram-links{
     margin-left:14rem;
   }
   
@@ -296,7 +296,7 @@ height:auto; }
 @media screen and (max-width:400px){
    
   
-  #gridContainer{
+  .gridContainer{
       display:grid;
       grid-template-columns: 50% 50%;
       gap: 0px;
@@ -322,7 +322,7 @@ height:auto; }
   
   ;
   }
-.editInfo{
+#editInfo{
   grid-area:editInfo;
   color:white;
   text-align: center;
@@ -331,7 +331,7 @@ height:auto; }
   letter-spacing: 1rem;
 
 } 
-.headInfo{
+#headInfo{
   grid-area:headInfo;
   color:white;
   text-align: center;
@@ -341,7 +341,7 @@ height:auto; }
   
 
 }
-.persInfo{
+#persInfo{
   grid-area:persInfo;
   color:white;
   text-align: center;
@@ -350,7 +350,7 @@ height:auto; }
   letter-spacing: 1rem;
   
 }
-.streetInfo{
+#streetInfo{
   grid-area:streetInfo;
   color:white;
   text-align: center;
@@ -358,39 +358,39 @@ height:auto; }
   text-transform: capitalize;
   letter-spacing: 1rem;
 }
-#grid-headshot { grid-area: grid-headshot; }
+.grid-headshot { grid-area: grid-headshot; }
 
-#main-headshot { grid-area: main-headshot; }
-#third-headshot{
+.main-headshot { grid-area: main-headshot; }
+.third-headshot{
     
   grid-area:third-headshot;
   
   
 }
 
-#main-personal { grid-area: main-personal; }
+.main-personal { grid-area: main-personal; }
 
-#grid-personal { grid-area: grid-personal; }
-#third-personal{
+.grid-personal { grid-area: grid-personal; }
+.third-personal{
   grid-area:third-personal;
  
 }
 
-#grid-streetstyle { grid-area: grid-streetstyle; }
+.grid-streetstyle { grid-area: grid-streetstyle; }
 
-#main-streetstyle { grid-area: main-streetstyle; }
-#third-streetstyle{
+.main-streetstyle { grid-area: main-streetstyle; }
+.third-streetstyle{
   grid-area:third-streetstyle;
   
     
 } 
-#main-editorial{
+.main-editorial{
   grid-area:main-editorial;
 } 
-#grid-editorial{
+.grid-editorial{
   grid-area:grid-editorial;
 }
-#editorial-third{
+.editorial-third{
   grid-area:editorial-third;
 }
 
@@ -430,20 +430,20 @@ height:auto; }
 #contact-form>#form>#textarea{
   width:20rem;
 }
-#instagram-links{
+.instagram-links{
   margin-left:1rem;
   margin-top:2rem;
  
   padding-bottom:2rem;
 
 }
-#instagram-links>a{
+.instagram-links>a{
   padding:1.5rem;
 }
-#contact-form>#map{
+#contact-form>.map{
   width:20rem;
 }
-#contact-form>#map>#map{
+#contact-form>.map>.map{
   width:20rem;
 }
 
