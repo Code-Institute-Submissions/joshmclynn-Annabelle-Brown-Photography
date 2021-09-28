@@ -310,6 +310,61 @@ height:auto; }
   
 }
 /*mobile view*/
+@media screen and (max-width:330px){
+  #head>#nav{
+    margin-right:0.5rem;
+
+  }
+  #title>h1{
+    font-size:1.5rem;
+  }
+  .scrollImage{
+    width:19rem;
+  }
+  .gridContainer{
+    width:19rem;
+  }
+  #streetInfo{
+    font-size:.6rem;
+  }
+  #persInfo{
+    font-size:.6rem;
+  }
+  #editInfo{
+    font-size:.6rem;
+  }
+  #editInfo{
+    font-size:.6rem;
+  }
+  #headInfo{
+    font-size:.6rem;
+  }
+  .gridContainer{
+    margin-top:10rem;
+  }
+  .bio>p{
+    font-size: medium;
+  }
+  #contact-form>#form>#nameInput{
+    width:16rem;
+  }
+  #contact-form>#form>#emailInput{
+    width:16rem;
+  }
+  #contact-form>#form>#textarea{
+    width: 16rem;
+  }
+  .map>#map{
+    width:16rem;
+  }
+  .instagram-links>a{
+    padding:.6rem;
+  }
+}   
+
+
+
+
 @media screen and (max-width:390px){
    
   
@@ -480,57 +535,3 @@ height:auto; }
 
 
 }
-@media screen and (max-width:330px){
-  #head>#nav{
-    margin-right:0.5rem;
-
-  }
-  #title>h1{
-    font-size:1.5rem;
-  }
-  .scrollImage{
-    width:19rem;
-  }
-  .gridContainer{
-    width:19rem;
-  }
-  #streetInfo{
-    font-size:.6rem;
-  }
-  #persInfo{
-    font-size:.6rem;
-  }
-  #editInfo{
-    font-size:.6rem;
-  }
-  #editInfo{
-    font-size:.6rem;
-  }
-  #headInfo{
-    font-size:.6rem;
-  }
-  .gridContainer{
-    margin-top:10rem;
-  }
-  .bio>p{
-    font-size: medium;
-  }
-  #contact-form>#form>#nameInput{
-    width:16rem;
-  }
-  #contact-form>#form>#emailInput{
-    width:16rem;
-  }
-  #contact-form>#form>#textarea{
-    width: 16rem;
-  }
-  .map>#map{
-    width:16rem;
-  }
-  .instagram-links>a{
-    padding:.6rem;
-  }
-}   
-
-
-
