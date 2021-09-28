@@ -304,7 +304,7 @@ height:auto; }
   
 }
 /*mobile view*/
-@media screen and (max-width:390px){
+@media screen and (min-width:380px) and (max-width:390px){
    
   
   .gridContainer{
