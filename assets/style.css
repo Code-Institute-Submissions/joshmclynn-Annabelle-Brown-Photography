@@ -277,6 +277,7 @@ height:auto; }
     height:300px;
     
 }
+/*Larger screen*/
 @media screen and (min-width:1300px)and (max-width:1500px) {
   .scrollImage{
     background-image:url('./images/London.jpg');
@@ -309,7 +310,7 @@ height:auto; }
   }
   
 }
-/*mobile view*/
+/*Average mobile view*/
  
 
 
@@ -485,6 +486,7 @@ height:auto; }
 
 
 }
+/*Small Mobile*/
 @media screen and (max-width:330px){
   
   #head>#nav{
