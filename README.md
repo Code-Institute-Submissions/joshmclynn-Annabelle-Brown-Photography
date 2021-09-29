@@ -55,6 +55,6 @@ Annabelle Brown Photography website is the landing page for potential clients an
     - The current live link can be found here [Annabelle Brown Photography](https://joshmclynn.github.io/Annabelle-Brown-Photography/)
 12. ### Credits
     * Media
-      - All Photographs and background images are Original Images and copywrited to Annabelle Brown Photography.
+      - All Photographs and background images are original images and copywrited to Annabelle Brown Photography.
        
   
