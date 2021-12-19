@@ -1,92 +1,63 @@
-
 /*Html rules*/
-html{
-  font-family:Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-  height:100%;
+  height: 100%;
   scroll-padding-top: 195px;
 }
-body{
-height:auto;
+
+body {
+  height: auto;
 }
-
 /*header and nav*/
-
-#head{
-  
-  
+#head {
   overflow: hidden;
-  top:0;
+  top: 0;
   position: fixed;
-  width:100%;
-  background-color:white;
-  
+  width: 100%;
+  background-color: white;
   border-color: black;
   font-size: inherit;
   opacity: 0.85;
-  font-weight:bold;
+  font-weight: bold;
   z-index: 2;
-  
-  
-  
-  
-  
 }
-
-
-#nav{
-  float:right;
-  top:0;
-  padding-right: 2rem;;
+#nav {
+  float: right;
+  top: 0;
+  padding-right: 2rem;
   text-decoration-color: black;
   text-decoration: none;
-  
-  
 }
-nav a{
+nav a {
   padding: 20px;
   text-decoration: none;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
-  color:black;
-  
+  color: black;
 }
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
   text-decoration-color: black;
 }
-
-
-
-
 /*parallax image*/
-.scrollImage{
-background-image:url('./images/London.jpg');
-height:100%;
-position: relative;
-
-background-attachment: fixed;
-background-position: center;
-background-repeat:no-repeat;
-width:100%;
-z-index: 0;
-
-
+.scrollImage {
+  background-image: url('/assets/images/London.jpg');
+  height: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
 }
-
-
-
-
-
-
 /*css for grid*/
 .gridContainer {
   margin-top: 13rem;
-  display: grid; 
-  grid-template-columns: 33.3% 33.3fr 33.3fr; 
-  
-  gap: 20px 20px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 33.3% 33.3fr 33.3fr;
+  gap: 20px 20px;
+  grid-template-areas:
     "streetInfo streetInfo streetInfo"
     "thirdStreet gridStreet mainStreet"
     "persInfo persInfo persInfo"
@@ -97,397 +68,388 @@ z-index: 0;
     "thirdHead gridHead mainHead"
     "bio bio bio"
     "contactForm contactForm contactForm"
-    "socialLinks socialLinks socialLinks"; 
+    "socialLinks socialLinks socialLinks";
 }
-  #text{
-    text-align: center;
-  } 
-  /*images within the grid*/
-.gridContainer>div>img{
-    object-fit: cover;
-    height:100%;
-    width:100%;
-    display:block;
-    position: relative;
+#text {
+  text-align: center;
 }
-    #editInfo{
-      grid-area:editInfo;
-      color:white;
-      text-align: center;
-      font-size:2rem;
-      text-transform: capitalize;
-      letter-spacing: 1rem;
-  
-    } 
-    #headInfo{
-      grid-area:headInfo;
-      color:white;
-      text-align: center;
-      font-size:2rem;
-      text-transform: capitalize;
-      letter-spacing: 1rem;
-      
-  
-    }
-    #persInfo{
-      grid-area:persInfo;
-      color:white;
-      text-align: center;
-      font-size:2rem;
-      text-transform: capitalize;
-      letter-spacing: 1rem;
-      
-    }
-    #streetInfo{
-      grid-area:streetInfo;
-      color:white;
-      text-align: center;
-      font-size:2rem;
-      text-transform: capitalize;
-      letter-spacing: 1rem;
-    }
-
-  
- 
- 
-  
-.third-streetstyle { grid-area: thirdStreet; }
-.grid-streetstyle { grid-area: gridStreet;
- }
-.main-streetstyle { grid-area: mainStreet; }
-.main-personal { grid-area: mainPers; }
-.grid-personal { grid-area: gridPers; }
-.third-personal { grid-area: thirdPers; }
-.main-editorial { grid-area: mainEdit; }
-.grid-editorial { grid-area: gridEdit; }
-.editorial-third { grid-area: thirdEdit; }
-.third-headshot { grid-area: thirdHead; }
-.grid-headshot { grid-area: gridHead; }
-.main-headshot { grid-area: mainHead; }
-#bio { grid-area: bio;
-      color: black;
-    background-color: white;
-    text-align: center;
-    padding: 50px 80px;
-    top:15rem;
-    display:block;
-    position:relative;
-    margin-left:5rem;
-    margin-right:5rem;
-    opacity:.9;
-    z-index:1;
-    font-weight: 400; }
-  #contact-form { grid-area: contactForm;
+/*images within the grid*/
+.gridContainer>div>img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
 }
-
-
-  .instagram-links { grid-area: socialLinks;
-      height:auto; 
-    }
-
-  h1{
-      font-size:2rem;
-  }
-  
-  
-  #contact-form { 
-    margin-top:20rem;
-    margin-left:20rem;
-    margin-bottom:5rem;
-    
-    
-    
-  }
-  
-  #contact-form>h2{
-    color:white;
-    
-    
-  }
-  #contact-form>#form{
-    color: white;
-    
-    
-  }
-   
-  #contact-form>#form>#nameInput{
-    width:25rem;
-  }
-  #contact-form>#form>#emailInput{
-    width:25rem;
-  }
-  #textarea{
-    width:25rem;
-  }
-  .map>h2{
-    color:white;
-  }
-  
- 
-  
-  .instagram-links { 
-    margin-top:2rem;
-    margin-left:25rem;
-  }
-  .instagram-links>a{
-    height:2rem;
-    padding:.7rem;
-    -webkit-filter: invert(1);
-    filter:invert(1)
-  }
-  .gridContainer>section>img{
-    max-width: 100%;
-    object-fit: cover;
-  
-    
-  }
-  .map>#map{
-    width:25rem;
-    height:300px;
-  }
+#editInfo {
+  grid-area: editInfo;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+}
+#headInfo {
+  grid-area: headInfo;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+}
+#persInfo {
+  grid-area: persInfo;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+}
+#streetInfo {
+  grid-area: streetInfo;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+}
+.third-streetstyle {
+  grid-area: thirdStreet;
+}
+.grid-streetstyle {
+  grid-area: gridStreet;
+}
+.main-streetstyle {
+  grid-area: mainStreet;
+}
+.main-personal {
+  grid-area: mainPers;
+}
+.grid-personal {
+  grid-area: gridPers;
+}
+.third-personal {
+  grid-area: thirdPers;
+}
+.main-editorial {
+  grid-area: mainEdit;
+}
+.grid-editorial {
+  grid-area: gridEdit;
+}
+.editorial-third {
+  grid-area: thirdEdit;
+}
+.third-headshot {
+  grid-area: thirdHead;
+}
+.grid-headshot {
+  grid-area: gridHead;
+}
+.main-headshot {
+  grid-area: mainHead;
+}
+#bio {
+  grid-area: bio;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  top: 15rem;
+  display: block;
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  opacity: .9;
+  z-index: 1;
+  font-weight: 400;
+}
+#contact-form {
+  grid-area: contactForm;
+}
+.instagram-links {
+  grid-area: socialLinks;
+  height: auto;
+}
+h1 {
+  font-size: 2rem;
+}
+#contact-form {
+  margin-top: 20rem;
+  margin-left: 20rem;
+  margin-bottom: 5rem;
+}
+#contact-form>h2 {
+  color: white;
+}
+#contact-form>#form {
+  color: white;
+}
+#contact-form>#form>#nameInput {
+  width: 25rem;
+}
+#contact-form>#form>#emailInput {
+  width: 25rem;
+}
+#textarea {
+  width: 25rem;
+}
+.map>h2 {
+  color: white;
+}
+.instagram-links {
+  margin-top: 2rem;
+  margin-left: 25rem;
+}
+.instagram-links>a {
+  height: 2rem;
+  padding: .7rem;
+  -webkit-filter: invert(1);
+  filter: invert(1)
+}
+.gridContainer>section>img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.map>#map {
+  width: 25rem;
+  height: 300px;
+}
 /*Larger screen*/
 @media screen and (min-width:1200px) and (max-width:1500px) {
-  .scrollImage{
-    background-image:url('./images/London.jpg');
-    height:100%;
+  .scrollImage {
+    background-image: url('./images/London.jpg');
+    height: 100%;
     position: relative;
     background-attachment: fixed;
     background-position: center;
-    background-repeat:no-repeat;
-    width:100%;
+    background-repeat: no-repeat;
+    width: 100%;
     z-index: 0;
   }
-  #contact-form{
-    margin-left:35rem;
+  #contact-form {
+    margin-left: 35rem;
   }
-  .instagram-links{
-    margin-left:38rem;
+  .instagram-links {
+    margin-left: 38rem;
   }
 }
 /*tablet view*/
-@media screen and (min-width:700px) and (max-width:800px){
-  
-  .gridContainer>#contact-form{
-      margin-left:9rem;
+@media screen and (min-width:700px) and (max-width:800px) {
+  .gridContainer>#contact-form {
+    margin-left: 9rem;
   }
-
-  .instagram-links{
-    margin-left:14rem;
+  .instagram-links {
+    margin-left: 14rem;
   }
-  
 }
 /*Average mobile view*/
- 
-
-
-
-
-@media screen and (max-width:390px){
-   
-  
-  .gridContainer{
-      display:grid;
-      grid-template-columns: 50% 50%;
-      gap: 0px;
-      width:23rem;
-      margin-top:13rem;
-      grid-template-areas:
-  "streetInfo streetInfo"
-  "third-streetstyle main-streetstyle"
-  "grid-streetstyle grid-streetstyle"
-  "headInfo headInfo"
-  "third-headshot main-headshot"
-  "grid-headshot grid-headshot"
-  "persInfo persInfo"
-  "third-personal main-personal"
-  "grid-personal grid-personal"
-  "editInfo editInfo"
-  "main-editorial editorial-third"
-  "grid-editorial grid-editorial"
-  "bio bio"
-  "contactForm contactForm"
-  "socialLinks socialLinks"
-  ;
+@media screen and (max-width:390px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0px;
+    width: 23rem;
+    margin-top: 13rem;
+    grid-template-areas:
+      "streetInfo streetInfo"
+      "third-streetstyle main-streetstyle"
+      "grid-streetstyle grid-streetstyle"
+      "headInfo headInfo"
+      "third-headshot main-headshot"
+      "grid-headshot grid-headshot"
+      "persInfo persInfo"
+      "third-personal main-personal"
+      "grid-personal grid-personal"
+      "editInfo editInfo"
+      "main-editorial editorial-third"
+      "grid-editorial grid-editorial"
+      "bio bio"
+      "contactForm contactForm"
+      "socialLinks socialLinks"
+    ;
   }
-  #editInfo{
-  grid-area:editInfo;
-  color:white;
-  text-align: center;
-  font-size:1rem;
-  text-transform: capitalize;
-  letter-spacing: 1rem;
-  } 
-  #headInfo{
-  grid-area:headInfo;
-  color:white;
-  text-align: center;
-  font-size:1rem;
-  text-transform: capitalize;
-  letter-spacing: 1rem;
+  #editInfo {
+    grid-area: editInfo;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
   }
-  #persInfo{
-  grid-area:persInfo;
-  color:white;
-  text-align: center;
-  font-size:1rem;
-  text-transform: capitalize;
-  letter-spacing: 1rem;
+  #headInfo {
+    grid-area: headInfo;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
   }
-  #streetInfo{
-  grid-area:streetInfo;
-  color:white;
-  text-align: center;
-  font-size:1rem;
-  text-transform: capitalize;
-  letter-spacing: 1rem;
+  #persInfo {
+    grid-area: persInfo;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
   }
-  .grid-headshot { grid-area: grid-headshot; }
-
-  .main-headshot { grid-area: main-headshot; }
-  .third-headshot{ grid-area:third-headshot;
+  #streetInfo {
+    grid-area: streetInfo;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
   }
-
-  .main-personal { grid-area: main-personal; }
-
-  .grid-personal { grid-area: grid-personal; }
-  .third-personal{
-  grid-area:third-personal;}
-
-  .grid-streetstyle { grid-area: grid-streetstyle; }
-
-  .main-streetstyle { grid-area: main-streetstyle; }
-  .third-streetstyle{
-  grid-area:third-streetstyle;
-  } 
-  .main-editorial{
-  grid-area:main-editorial;
-  } 
-  .grid-editorial{
-  grid-area:grid-editorial;
+  .grid-headshot {
+    grid-area: grid-headshot;
   }
-  .editorial-third{
-  grid-area:editorial-third;
+  .main-headshot {
+    grid-area: main-headshot;
   }
-
-
-  #head{
+  .third-headshot {
+    grid-area: third-headshot;
+  }
+  .main-personal {
+    grid-area: main-personal;
+  }
+  .grid-personal {
+    grid-area: grid-personal;
+  }
+  .third-personal {
+    grid-area: third-personal;
+  }
+  .grid-streetstyle {
+    grid-area: grid-streetstyle;
+  }
+  .main-streetstyle {
+    grid-area: main-streetstyle;
+  }
+  .third-streetstyle {
+    grid-area: third-streetstyle;
+  }
+  .main-editorial {
+    grid-area: main-editorial;
+  }
+  .grid-editorial {
+    grid-area: grid-editorial;
+  }
+  .editorial-third {
+    grid-area: editorial-third;
+  }
+  #head {
     overflow: hidden;
-    top:0;
+    top: 0;
     position: fixed;
-    width:100%;
-    background-color:white;
-  
+    width: 100%;
+    background-color: white;
     border-color: black;
     font-size: inherit;
     opacity: 0.85;
-    font-weight:bold;
+    font-weight: bold;
     z-index: 2;
   }
-  #head>#h1{
-    font-size:1.4rem;
+  #head>#h1 {
+    font-size: 1.4rem;
   }
-  #head>#nav{
-    margin-right:3rem;
+  #head>#nav {
+    margin-right: 3rem;
   }
-  #head>#nav>a{
-    padding:10px;
-    font-size:1rem;
-  }    
-  .scrollImage{
-    width:23rem;
-  }  
-  #contact-form{
-    margin-left:1rem;
+  #head>#nav>a {
+    padding: 10px;
+    font-size: 1rem;
   }
-  #contact-form>#form>#nameInput{
-    width:20rem;
+  .scrollImage {
+    width: 23rem;
   }
-  #contact-form>#form>#emailInput{
-    width:20rem;
+  #contact-form {
+    margin-left: 1rem;
   }
-  #contact-form>#form>#textarea{
-    width:20rem;
+  #contact-form>#form>#nameInput {
+    width: 20rem;
   }
-  .instagram-links{
-    margin-left:1rem;
-    margin-top:2rem;
- 
-    padding-bottom:2rem;
-
+  #contact-form>#form>#emailInput {
+    width: 20rem;
   }
-  .instagram-links>a{
-    padding:1.5rem;
+  #contact-form>#form>#textarea {
+    width: 20rem;
   }
-  #contact-form>.map{
-    width:20rem;
+  .instagram-links {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
   }
-  .map>#map{
-    width:20rem;
+  .instagram-links>a {
+    padding: 1.5rem;
   }
-
-  #bio{
-    margin-left:1rem;
-    margin-right:1rem;
-    padding:1rem 1rem;
+  #contact-form>.map {
+    width: 20rem;
   }
-  #bio>#about{
+  .map>#map {
+    width: 20rem;
+  }
+  #bio {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+  }
+  #bio>#about {
     letter-spacing: 1rem;
   }
 }
 /*Small Mobile*/
-@media screen and (max-width:330px){
-  
-  #head>#nav{
-    margin-right:0.5rem;
+@media screen and (max-width:330px) {
+
+  #head>#nav {
+    margin-right: 0.5rem;
   }
-  #title>h1{
-    font-size:1.5rem;
+  #title>h1 {
+    font-size: 1.5rem;
   }
-  #nav>a{
-    font-size:1rem;
+  #nav>a {
+    font-size: 1rem;
   }
-  .scrollImage{
-    width:19rem;
+  .scrollImage {
+    width: 19rem;
   }
-  .gridContainer{
-   
-    width:19rem;
-    margin-top:10rem;
+  .gridContainer {
+    width: 19rem;
+    margin-top: 10rem;
   }
-  #streetInfo{
-    font-size:.6rem;
+  #streetInfo {
+    font-size: .6rem;
   }
-  #persInfo{
-    font-size:.6rem;
+  #persInfo {
+    font-size: .6rem;
   }
-  #editInfo{
-    font-size:.6rem;
+  #editInfo {
+    font-size: .6rem;
   }
-  #editInfo{
-    font-size:.6rem;
+  #editInfo {
+    font-size: .6rem;
   }
-  #headInfo{
-    font-size:.6rem;
+  #headInfo {
+    font-size: .6rem;
   }
-  .gridContainer{
-    margin-top:10rem;
+  .gridContainer {
+    margin-top: 10rem;
   }
-  .bio>p{
+  .bio>p {
     font-size: medium;
   }
-  #contact-form>#form>#nameInput{
-    width:16rem;
-  }
-  #contact-form>#form>#emailInput{
-    width:16rem;
-  }
-  #contact-form>#form>#textarea{
+  #contact-form>#form>#nameInput {
     width: 16rem;
   }
-  .map>#map{
-    width:16rem;
+  #contact-form>#form>#emailInput {
+    width: 16rem;
   }
-  .instagram-links>a{
-    padding:.6rem;
+  #contact-form>#form>#textarea {
+    width: 16rem;
   }
-}  
+  .map>#map {
+    width: 16rem;
+  }
+  .instagram-links>a {
+    padding: .6rem;
+  }
+}
