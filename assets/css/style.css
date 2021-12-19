@@ -42,7 +42,7 @@ nav a:hover {
 }
 /*parallax image*/
 .scrollImage {
-  background-image: url('/assets/images/London.jpg');
+  background-image: url(Annabelle-Brown-Photography/assets/images/London.jpg);
   height: 100%;
   position: relative;
   background-attachment: fixed;
